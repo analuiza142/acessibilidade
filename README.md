@@ -1,6 +1,6 @@
 # Site acessível sobre Felinos
 # Sobre
-Refatoração de um site implementando recursos de acessibilidade no html, css e JS.
+Site para alura e trabalho com recursos de acessibilidade no html, css e JS.
 ## Recursos de acessibilidade
 - Atributos aria
 - alt
