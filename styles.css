@@ -199,8 +199,8 @@ h2 {
     background: none;
 }
 .titulo-felinos {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
-    color: #0a2ecf; /* ou branco se o fundo for escuro */
-    letter-spacing: 3px;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 6rem; /* Bem grande e marcante */
+    color: #000; /* ou branco, dependendo do fundo */
+    letter-spacing: 4px;
 }
