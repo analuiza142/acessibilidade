@@ -198,3 +198,9 @@ h2 {
 .alto-contraste .fundo-galeria {
     background: none;
 }
+.titulo-felinos {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: #0a2ecf; /* ou branco se o fundo for escuro */
+    letter-spacing: 3px;
+}
