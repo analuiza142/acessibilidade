@@ -212,6 +212,13 @@ h2 {
 }
 body {
     background: linear-gradient(to bottom, #98cdf3, #b8ddf0, #c6dfe9);
+}
 
+#opcoes-acessibilidade {
+    display: none;
+}
+
+#opcoes-acessibilidade.d-block {
+    display: block;
 }
 
