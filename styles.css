@@ -210,3 +210,8 @@ h2 {
     color: #1b5ab8; /* Ou ajuste conforme seu fundo */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+body {
+    background: linear-gradient(to bottom, #98cdf3, #b8ddf0, #c6dfe9);
+
+}
+
