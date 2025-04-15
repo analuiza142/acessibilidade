@@ -204,3 +204,9 @@ h2 {
     color: #09023f; /* ou branco, dependendo do fundo */
     letter-spacing: 4px;
 }
+.texto-boas-vindas {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: #1b5ab8; /* Ou ajuste conforme seu fundo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
