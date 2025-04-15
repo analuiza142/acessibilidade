@@ -1,37 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lemon&family=Pacifico&family=Staatliches&display=swap');
 
+/* Variáveis de cores */
 :root {
-    --laranja-claro:rgb(8, 19, 114);
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #419bbe;
-    --alto-contraste-link: #0b4668;
+    --azul-escuro: #081372;
+    --azul-claro: #1b5ab8;
+    --fundo-claro: #ffffff;
+    --contraste-fundo: #000000;
+    --contraste-texto: #f0f0f0;
+    --contraste-botao: #0077cc;
 }
 
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base */
 body {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    font-family: 'Montserrat';
+    background: linear-gradient(to bottom, #98cdf3, #b8ddf0, #c6dfe9);
+    color: #333;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: var(--fundo-claro);
 }
 
-
-section {
-    padding-bottom: 5rem;
+.titulo-felinos {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 6rem;
+    color: #09023f;
+    letter-spacing: 4px;
 }
 
-
+/* Menu */
 .nav-link {
     color: #209993;
     font-weight: 600;
 }
 
+/* Banner inicial */
 .inicio-fundo {
-    /* aula 3 */
     background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
     border-radius: 80px;
@@ -39,9 +53,9 @@ section {
     height: 606px;
     padding: 40px;
     margin: 0 auto;
+    position: relative;
 }
 
-/* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
     right: 0;
@@ -50,7 +64,6 @@ section {
     height: auto;
 }
 
-
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
@@ -58,53 +71,31 @@ section {
     gap: 1rem;
 }
 
-
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--azul-escuro);
+    color: white;
     border-radius: 30px;
     border: none;
     width: 14em;
     height: 3em;
-    align-content: center;
-
+    font-weight: bold;
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--azul-escuro);
+    color: white;
 }
 
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
-}
-
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
-}
-
-
-h2 {
+/* Seção explicativa */
+#sobre-felinos h2 {
     font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
+    font-size: 2.5rem;
+    color: var(--azul-escuro);
 }
 
+/* Galeria */
 #galeria {
-    background-color: #FAF4F4;
-
+    background-color: #faf4f4;
 }
 
 .fundo-galeria {
@@ -112,113 +103,119 @@ h2 {
     background-size: 180px 180px;
 }
 
+/* Contato */
 #contato {
     background-image: url('img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
 }
 
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
 .formulario button {
     background-color: #2a6ccf;
+    color: white;
     border: none;
     font-weight: bold;
 }
 
 .form-control {
-    background-color: #F1EDEF;
+    background-color: #f1edef;
 }
-.menu-acessibilidade{
+
+/* Rodapé */
+footer {
+    background-color: var(--fundo-claro);
+    padding: 2rem;
+    font-style: italic;
+    color: #333;
+}
+
+/* Texto de boas-vindas */
+.texto-boas-vindas {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: var(--azul-claro);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Acessibilidade */
+.menu-acessibilidade {
     position: fixed;
-    top:2rem;
-    right:20px;
+    top: 2rem;
+    right: 20px;
     z-index: 1000;
 }
 
-.rotacao-botao{
+.rotacao-botao {
     transform: rotate(-90deg);
     transform-origin: right center;
 }
 
-.opcoes-acessibilidade{
-    margin-top:10px;
-    display: flex;
+.opcoes-acessibilidade {
+    display: none;
     flex-direction: column;
+    margin-top: 10px;
 }
 
-.opcoes-acessibilidade button{
+.opcoes-acessibilidade button {
     margin-bottom: 5px;
 }
-.apresenta-lista{
-    display: none;
+
+#opcoes-acessibilidade.d-block {
+    display: flex;
 }
 
-.alto-contraste{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+/* Contraste */
+.alto-contraste {
+    background-color: var(--contraste-fundo);
+    color: var(--contraste-texto);
 }
 
 .alto-contraste header,
 .alto-contraste footer,
-.alto-contraste .formulario{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+.alto-contraste .formulario {
+    background-color: var(--contraste-fundo);
+    color: var(--contraste-texto);
 }
 
-.alto-contraste .nav-link{
-    color: var(--alto-contraste-link);
-}
-
+.alto-contraste .nav-link,
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
-.alto-contraste .btn-primary{
-    background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo)
+.alto-contraste .btn-primary {
+    background-color: var(--contraste-botao);
+    color: white;
 }
 
-.alto-contraste #tropicalia {
-    background: none;
-}
-
-.alto-contraste #galeria {
-    background-color: var(--alto-contraste-fundo);
-}
+.alto-contraste #tropicalia,
 .alto-contraste .fundo-galeria {
     background: none;
 }
-.titulo-felinos {
-    font-family: 'Staatliches', sans-serif;
-    font-size: 6rem; /* Bem grande e marcante */
-    color: #09023f; /* ou branco, dependendo do fundo */
-    letter-spacing: 4px;
-}
-.texto-boas-vindas {
-    font-family: 'Pacifico', cursive;
-    font-size: 4rem;
-    color: #1b5ab8; /* Ou ajuste conforme seu fundo */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-body {
-    background: linear-gradient(to bottom, #98cdf3, #b8ddf0, #c6dfe9);
-}
 
-#opcoes-acessibilidade {
-    display: none;
-}
+/* Responsivo */
+@media (max-width: 768px) {
+    .inicio-fundo {
+        height: auto;
+        flex-direction: column;
+    }
 
-#opcoes-acessibilidade.d-block {
-    display: block;
-}
+    .img-inicio {
+        position: static;
+        width: 100%;
+        margin-top: 2rem;
+    }
 
+    .titulo-felinos {
+        font-size: 4rem;
+    }
+
+    .texto-boas-vindas {
+        font-size: 2.5rem;
+    }
+}
