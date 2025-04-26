@@ -210,3 +210,41 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+.alto-contraste {
+    background-color: var(--contraste-fundo);
+    color: white;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario,
+.alto-contraste .form-control {
+    background-color: var(--contraste-fundo);
+    color: white;
+}
+
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3,
+.alto-contraste h4,
+.alto-contraste h5,
+.alto-contraste h6,
+.alto-contraste p,
+.alto-contraste span,
+.alto-contraste label,
+.alto-contraste a,
+.alto-contraste li,
+.alto-contraste .texto-boas-vindas,
+.alto-contraste .titulo-felinos {
+    color: white !important;
+}
+
+.alto-contraste .nav-link,
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--contraste-botao);
+    color: white;
+}
+
