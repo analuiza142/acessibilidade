@@ -36,27 +36,37 @@ header {
     letter-spacing: 4px;
 }
 
-/* Menu */
 .nav-link {
     color: #209993;
     font-weight: 600;
 }
 
-/* Banner inicial */
 .inicio-fundo {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 80px;
-    width: 100%;
-    padding: 40px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 20px;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .esquerda-conteudo {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 80px;    
-}
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: left;
+  }
+  
+  .img-inicio {
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px; 
+  }
+  
 
 .img-inicio {
     display: block;
@@ -96,14 +106,12 @@ header {
     color: white;
 }
 
-/* Seção explicativa */
 #sobre-felinos h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5rem;
     color: var(--azul-escuro);
 }
 
-/* Galeria */
 #galeria {
     background-color: #faf4f4;
 }
@@ -113,7 +121,6 @@ header {
     background-size: 180px 180px;
 }
 
-/* Contato */
 #contato {
     background-image: url('img/4965007.jpg');
     background-size: cover;
@@ -139,7 +146,6 @@ header {
     background-color: #f1edef;
 }
 
-/* Rodapé */
 footer {
     background-color: var(--fundo-claro);
     padding: 2rem;
@@ -147,7 +153,6 @@ footer {
     color: #333;
 }
 
-/* Texto de boas-vindas */
 .texto-boas-vindas {
     font-family: 'Pacifico', cursive;
     font-size: 4rem;
@@ -155,7 +160,6 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Acessibilidade */
 .menu-acessibilidade {
     position: fixed;
     top: 2rem;
@@ -182,7 +186,6 @@ footer {
     display: flex;
 }
 
-/* Contraste */
 .alto-contraste {
     background-color: var(--contraste-fundo);
     color: var(--contraste-texto);
@@ -208,7 +211,6 @@ footer {
     background: none;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .inicio-fundo {
         height: auto;
