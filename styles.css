@@ -1,7 +1,5 @@
-/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lemon&family=Pacifico&family=Staatliches&display=swap');
 
-/* Variáveis de cores */
 :root {
     --azul-escuro: #081372;
     --azul-claro: #1b5ab8;
@@ -11,18 +9,17 @@
     --contraste-botao: #0077cc;
 }
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo base */
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: #faf8f8;
+    color: black;
+    background-color: var(--fundo-claro);
 }
 
 header {
@@ -49,43 +46,25 @@ header {
     border-radius: 20px;
     gap: 2rem;
     flex-wrap: wrap;
-  }
-  
-  .img-inicio {
-    max-width: 100%;
-    height: auto;
-    margin-top: 200px; 
-  }
-  
-  .esquerda-conteudo {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; 
-    text-align: left;
-  }
-  
-.img-inicio {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-top: 2rem;
 }
-
 
 .img-inicio {
     position: absolute;
     right: 0;
-    top: 18rem;
+    top: 22rem; /* aqui ajustei mais para baixo */
     width: 45rem;
     height: auto;
+    display: block;
+    max-width: 100%;
 }
 
 .esquerda-conteudo {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
+    text-align: left;
     gap: 1rem;
 }
 
@@ -111,7 +90,7 @@ header {
 }
 
 #galeria {
-    background-color: #302b2b;
+    background-color: #cebfbf;
 }
 
 .fundo-galeria {
@@ -127,6 +106,7 @@ header {
 
 .formulario {
     background-color: #ffffff;
+    color: black;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -135,20 +115,21 @@ header {
 
 .formulario button {
     background-color: #2a6ccf;
-    color: rgb(7, 7, 7);
+    color: black;
     border: none;
     font-weight: bold;
 }
 
 .form-control {
     background-color: #f1edef;
+    color: black;
 }
 
 footer {
     background-color: var(--fundo-claro);
     padding: 2rem;
     font-style: italic;
-    color: #333;
+    color: black;
 }
 
 .texto-boas-vindas {
