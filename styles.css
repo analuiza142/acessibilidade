@@ -52,6 +52,12 @@ header {
     flex-wrap: wrap;
   }
   
+  .img-inicio {
+    max-width: 100%;
+    height: auto;
+    margin-top: 120px; 
+  }
+  
   .esquerda-conteudo {
     flex: 1;
     display: flex;
@@ -61,13 +67,6 @@ header {
     text-align: left;
   }
   
-  .img-inicio {
-    max-width: 100%;
-    height: auto;
-    margin-top: 60px; 
-  }
-  
-
 .img-inicio {
     display: block;
     max-width: 100%;
