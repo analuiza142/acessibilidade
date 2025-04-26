@@ -7,7 +7,7 @@
     --azul-claro: #1b5ab8;
     --fundo-claro: #ffffff;
     --contraste-fundo: #000000;
-    --contraste-texto: #f0f0f0;
+    --contraste-texto: #161515;
     --contraste-botao: #0077cc;
 }
 
@@ -102,7 +102,7 @@ header {
 
 .display-4 {
     text-shadow: -5px 5px var(--azul-escuro);
-    color: white;
+    color: rgb(43, 38, 38);
 }
 
 #sobre-felinos h2 {
