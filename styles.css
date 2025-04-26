@@ -111,7 +111,7 @@ header {
 }
 
 #galeria {
-    background-color: #faf4f4;
+    background-color: #302b2b;
 }
 
 .fundo-galeria {
@@ -135,7 +135,7 @@ header {
 
 .formulario button {
     background-color: #2a6ccf;
-    color: white;
+    color: rgb(7, 7, 7);
     border: none;
     font-weight: bold;
 }
