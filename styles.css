@@ -45,7 +45,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #fffbfb;
     padding: 2rem;
     border-radius: 20px;
     gap: 2rem;
