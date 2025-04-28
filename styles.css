@@ -51,7 +51,7 @@ header {
 .img-inicio {
     position: absolute;
     right: 0;
-    top: 22rem; /* aqui ajustei mais para baixo */
+    top: 22rem; 
     width: 45rem;
     height: auto;
     display: block;
@@ -145,6 +145,11 @@ footer {
     right: 20px;
     z-index: 1000;
 }
+display: none;
+flex-direction: column;
+margin-top: 10px;
+}
+
 
 .rotacao-botao {
     transform: rotate(-90deg);
