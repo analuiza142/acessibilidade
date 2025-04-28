@@ -145,11 +145,6 @@ footer {
     right: 20px;
     z-index: 1000;
 }
-display: none;
-flex-direction: column;
-margin-top: 10px;
-}
-
 
 .rotacao-botao {
     transform: rotate(-90deg);
